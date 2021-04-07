@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sprint 1</title>
+</head>
+
+<body onload="initGame()">
+    <div class="sidenav">
+        <h1>Minesweeper</h1>
+         <div class="info">
+          <a class="lives">Lives: ❤️ ❤️ ❤️ </a>
+          <a class="hints" onclick="showHints()">Hints: 💡 💡 💡</a>
+          <a class="safe-cell" onclick="safeClick()">Safe Click : 3</a>   
+          <div class="score">Best Score:</div>
+          <a class="score-easy">Easy:</a>
+          <a class="score-medium">Medium:</a>
+          <a class="score-hard">Hard:</a>
+          <a class="timer">Timer 0:0</a>
+        </div>
+      </div>
+    <button class="smiley" onclick="restart();">😀</button>
+    <div class="difficulty">
+    <button class="Easy" onclick="changeDifficulty(4)">Easy</button>
+    <button class="Medium" onclick="changeDifficulty(8)">Medium</button>
+    <button class="Hard" onclick="changeDifficulty(12)">Hard</button>
+    </div>
+    <div class="board"></div>
+    <div class="game-over"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
