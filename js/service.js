@@ -44,8 +44,3 @@ function getProjects() {
     return gProjects;
 }
 
-function submitEmail(){
-    var subjectStr = document.querySelector('.input-subject').value
-    var messageStr = document.querySelector('.input-message').value
-    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to="&su=${subjectStr}&body=${messageStr}`
-}
